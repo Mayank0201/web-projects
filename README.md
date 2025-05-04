@@ -1,1 +1,1 @@
-Contains my web projects and my journey through it :)
+Contains my web projects/capstone projects
