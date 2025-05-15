@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+  <%- include("partials/header.ejs") %>
+    <ul class="nav nav-pills">
+    <li class="nav-item">
+        <form action="/" method="GET">
+            <button type="submit" class="nav-link active" aria-current="page">Go Back</button>
+        </form>
+    </li> </ul>
+</body>
+
+  <div class="container">
+    <% if (locals.carr && locals.tarr && locals.tarr.length > 0) { %>
+      <% for (let i = 0; i < tarr.length; i++) { %>
+        <div class="post-container">
+          <h2 class="post-title"><%= tarr[i] %> (Post id: <%= i %>)</h2>
+          <div class="post-content">
+            <p><%= carr[i] %></p>
+          </div>
+        </div>
+      <% } %>
+    <% } else { %>
+      <h3>No posts yet</h3>
+    <% } %>
+  </div>
+
+</body>
+
+  <%- include("partials/footer.ejs") %>
+
+</html>
