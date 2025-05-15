@@ -7,5 +7,5 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
 exclude:
-  -node_modules
+  - node_modules
 markdown: kramdown
