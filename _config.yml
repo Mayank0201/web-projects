@@ -1,7 +1,7 @@
 title: My Web Projects
 description: A simple blog powered by Jekyll
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yourusername.github.io" # replace with your GitHub Pages URL
+baseurl: "/web-projects"
+url: "https://mayank0201.github.io"
 theme: jekyll-theme-primer
 plugins:
   - jekyll-seo-tag
